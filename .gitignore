@@ -24,3 +24,5 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+src/test/java/coding/exercise/validity/ValidityApplicationTests.java
+src/test/java/coding/exercise/validity/ValidityApplicationTests.java

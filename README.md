@@ -7,10 +7,13 @@
 To run the project:
 
 a. Simply run "gradle bootRun"
+
 b. Run "gradle build" and execute the jar file "java -jar build/libs/validity-0.0.1-SNAPSHOT.jar"
 
 After the application starts running:
 
 a. Go to http://localhost:8080/people to list all the people
+
 b. Go to http://localhost:8080/duppeople to list all the potential people
+
 c. Go to http://localhost:8080/nonduppeople to list all the non duplicate people

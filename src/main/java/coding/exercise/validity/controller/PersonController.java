@@ -4,19 +4,12 @@ import coding.exercise.validity.model.Person;
 import coding.exercise.validity.service.PersonService;
 import org.apache.commons.codec.language.Metaphone;
 import org.apache.commons.text.similarity.LevenshteinDistance;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -58,6 +51,9 @@ public class PersonController {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * This is the extremely simple method to detect the potential duplicate...
+     */
     private void potentialDup() {
         if (fullList == null) {
             retrieveAllPeople();
@@ -97,7 +93,13 @@ public class PersonController {
                 .collect(Collectors.toList());
     }
 
-//    private void potentialDupFurther(List<Person> list) {
+    /**
+     * This was a method that I think may filter/double check the potential duplicate list, but it got more and more
+     * complicate so I commented it out.
+     *
+     * @param list the first potential duplicate list
+     */
+    private void potentialDupFurther(List<Person> list) {
 //        LevenshteinDistance levenshteinDistance = new LevenshteinDistance();
 //        Metaphone metaphone = new Metaphone();
 //        int size = list.size();
@@ -116,7 +118,7 @@ public class PersonController {
 //                list.remove(i--);
 //            }
 //        }
-//    }
+    }
 
     @GetMapping("/people")
     public String listAllPeople(Model model) {

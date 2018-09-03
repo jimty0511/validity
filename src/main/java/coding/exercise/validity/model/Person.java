@@ -4,7 +4,6 @@ import org.json.JSONObject;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Arrays;
 
 @Entity
 @Table(name = "people")

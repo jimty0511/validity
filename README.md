@@ -4,10 +4,10 @@
 2. The PersonService and PersonRepository will retrieve all of the people from the H2 memory database
 3. The PersonController and three different html pages will display All The People / Potential People / Non Dup People
 
-To run the project:
+Two ways to run the project:
 
     a. Simply run "gradle bootRun"
-    b. Run "gradle build" and execute the jar file "java -jar build/libs/validity-0.0.1-SNAPSHOT.jar"
+    b. Run "gradle build" then execute the jar file "java -jar build/libs/validity-0.0.1-SNAPSHOT.jar"
 
 After the application starts running:
 

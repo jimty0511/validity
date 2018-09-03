@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ValidityApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ValidityApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ValidityApplication.class, args);
+    }
 }
